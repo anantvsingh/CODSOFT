@@ -7,169 +7,10 @@ import { responsiveHeight,responsiveWidth,responsiveFontSize,responsiveScreenHei
 
 
 function Screen(){
-
-    // const[values,setValues]=useState('');
-    // const [currValue,setCurrentValue]=useState(0)
-    // const [operator,setOperator]=useState(null)
-    // const [prevValue,setPrevValue]=useState(0)
-    // // const [currTotal,setTotal]=useState();
-    // const[v,setV]=useState([]);
-    
-
-    // function numberInput(num){
-        
-    //         setValues(values+num)
-    //         setCurrentValue(currValue+num);
-    //         v.push(currValue);
-      
-    // }
-
-    // function handleOperator(curroperator){
-    //     //    (prev)=>setV(...prev,operator)
-    //         setValues(values+curroperator)
-    //         setPrevValue(currValue);
-    //         setOperator(curroperator);
-    //         setCurrentValue('');
-            
-    //     }
-   
-
-    
-
-    
-
-    
-
-
-//     const[values,setValues]=useState([])
-
-    
-//     function numberInput(num){
-//         // setCurrentValue(currValue+num)
-//         const n=currValue*10+num;
-//         setValues([...values,n])
-        
-// }
-// function handleOperator(curroperator){
-    //    (prev)=>setV(...prev,operator)
-        // setValues(values+curroperator)
-        // setPrevValue(currValue);
-        // setOperator(curroperator);
-        // setCurrentValue('');
-
-//         setValues([...values,curroperator])
-//         setCurrentValue(0);
-        
-//     }
-
-// function operatorInput(){
-
-    
-//     setCurrentValue(0);
-//     const total=values.reduce((prev,curr)=>{
-//         if(curr!==NaN){
-//             if(currValue!==0){
-                // setPrevValue(currValue);
-                // setCurrentValue(curr);
-
-                // const num1=parseFloat(currValue);
-                // const num2=parseFloat(prevValue);
-
-                // if(operator==='+'){
-                //     return prev=prev+curr
-        
-        
-                // }
-                // else if(operator==='-'){
-                //     setCurrentValue((num2-num1).toString())
-                // }
-                // else if(operator==='*'){
-                //     setCurrentValue((num2*num1).toString())
-                // }
-                // else if(operator==='/'){
-                //     setCurrentValue((num2/num1).toString())
-                // }
-
-                // setOperator(null);
-                // setPrevValue('');
-    //         }
-    //         else{
-    //             setCurrentValue(curr);
-    //         }
-    //     }
-    //     else{
-    //         setOperator(curr);
-    //     }
-    // },0)
-
-    // setCurrentValue(total)
-    
-    
-    // values.map(value=>{
-    //     if(value!==NaN){
-            // if(currValue!==''){
-            //     setPrevValue(currValue);
-            //     setCurrentValue(value);
-
-            //     const num1=parseFloat(currValue);
-            //     const num2=parseFloat(prevValue);
-
-            //     if(operator==='+'){
-            //         setCurrentValue((num1+num2).toString())
-        
-        
-            //     }
-            //     else if(operator==='-'){
-            //         setCurrentValue((num2-num1).toString())
-            //     }
-            //     else if(operator==='*'){
-            //         setCurrentValue((num2*num1).toString())
-            //     }
-            //     else if(operator==='/'){
-            //         setCurrentValue((num2/num1).toString())
-            //     }
-
-            //     setOperator(null);
-            //     setPrevValue('');
-            // }
-            // else{
-            //     setCurrentValue(value);
-            // }
-            // }else{
-            //     setOperator(value);
-            //  }
-    // })
-
-    
-    // const num1=parseFloat(currValue);
-    // const num2=parseFloat(prevValue);
-
-    // if(operator==='+'){
-    //     setCurrentValue((num1+num2).toString())
-        
-        
-    // }
-    // else if(operator==='-'){
-    //     setCurrentValue((num2-num1).toString())
-    // }
-    // else if(operator==='*'){
-    //     setCurrentValue((num2*num1).toString())
-    // }
-    // else if(operator==='/'){
-    //     setCurrentValue((num2/num1).toString())
-    // }
-    
-    // setOperator(null);
-    // setPrevValue('');
-    
-    // console.log(v)
-// }
-
     const[values,setValues]=useState('');
     const[currValue,setCurrentValue]=useState('');
-    const [operator,setOperator]=useState(null)
-    const [prevValue,setPrevValue]=useState('')
-    // const[operatorClick,setOperatorClick]=useState(false)
+    const [operator,setOperator]=useState(null);
+    const [prevValue,setPrevValue]=useState('');
     const[numClick,setNumClick]=useState(false);
     const[total,setTotal]=useState('');
     const[temp,setTemp]=useState('');
@@ -262,7 +103,7 @@ function Screen(){
             return numt
         }
         else if(operator==='/'){
-            const numt=((num2/num1).toString());
+            const numt=((num1/num2).toString());
             return numt
         }
         
